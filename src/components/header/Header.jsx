@@ -8,7 +8,7 @@ export default function Header() {
                 <ImagemLogo/>
             </DivLogo>
             <DivNav>
-                <Items href="#Home">Sobre mim</Items>
+                <Items href="#Sobre Mim">Sobre mim</Items>
                 <Items href="#Experiencia">Experiência</Items>
                 <Items href="#Projetos">Projetos</Items>
             </DivNav>
