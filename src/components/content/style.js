@@ -375,8 +375,6 @@ export const Texto = styled.div`
     color: #72FFCC;
     font-weight: 900;
     font-size: 40px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 0.1px;
     
     margin-top: -25px;
     margin-left: 20px;
@@ -416,9 +414,6 @@ export const TextoProjetos = styled.div`
     color: #72FFCC;
     font-weight: 1000;
     font-size: 40px;
-
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 0.1px;
 
     margin-top: 50px;
     margin-bottom: -40px;
