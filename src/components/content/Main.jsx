@@ -6,6 +6,7 @@ import Linkedin from "../../imgs/linkedin.png";
 import Emily from "../../imgs/emily.png";
 import Link from "../../imgs/simbolo-de-link-externo.png";
 import Logo from "../../imgs/E.png";
+import Email from "../../imgs/o-email.png";
 
 function Main() {
   return (
@@ -23,6 +24,7 @@ function Main() {
                             <LogoRedes src={Github} href={'https://github.com/costaemily'}/>
                             <LogoRedes src={Linkedin} href={'https://www.linkedin.com/in/costa-emily/'}/>
                             <LogoRedes src={Instagram} href={'https://www.instagram.com/costa.emilys/'}/>
+                            <LogoRedes src={Email} href={"mailto:costa.emily@outlook.com"}/>
                         </LogosContainer>
                         <DivMySkills>
                             <MySkills width={'70px'}>HTML</MySkills>
@@ -143,5 +145,4 @@ function Main() {
         </div>
   );
 }
-
 export default Main;
