@@ -24,26 +24,27 @@ function Main() {
                             <LogoRedes src={Linkedin} href={'https://www.linkedin.com/in/costa-emily/'}/>
                             <LogoRedes src={Instagram} href={'https://www.instagram.com/costa.emilys/'}/>
                         </LogosContainer>
+                        <DivMySkills>
+                            <MySkills width={'70px'}>HTML</MySkills>
+                            <MySkills width={'70px'}>CSS</MySkills>
+                            <MySkills width={'120px'}>JavaScript</MySkills>
+                            <MySkills width={'70px'}>REACT</MySkills>
+                            <MySkills width={'90px'}>PYTHON</MySkills>
+                            <MySkills width={'70px'}>C#</MySkills>
+                        </DivMySkills>
                     </TextoContainer>
-                    <DivMySkills>
-                        <MySkills top={'150px'} right={'210px'} width={'70px'}>HTML</MySkills>
-                        <MySkills top={'20px'} right={'-140px'} width={'70px'}>CSS</MySkills>
-                        <MySkills top={'20px'} right={'150px'} width={'70px'}>JS</MySkills>
-                        <MySkills top={'20px'} right={'-140px'} width={'70px'}>REACT</MySkills>
-                        <MySkills top={'0%'} right={'300px'} width={'90px'}>PYTHON</MySkills>
-                    </DivMySkills>
                 </DivPrin>
             </Prin> 
             <DivSobreMim id="SobreMim">
                 <DivTextoSobreMin>
                     <TituloSobreMin>Olá! Eu sou a Emily</TituloSobreMin>
                     <TextoSobreMin>
-                        Estudante de Engenharia da Computação no nstituto Federal de Educação, 
+                        Estudante de Engenharia da Computação no Instituto Federal de Educação, 
                         Ciência e Tecnologia de São Paulo no Campus Birigui e Estagiária na Gorila Invest.
                         Descobri a paixão por programação na ETEC onde cursei Técnico em Informárica e desde
                         então o estudo se tornou constante.
                         Adoro desafios complexos, em especial aqueles que me tiram da zona de conforto.
-                        Nas horas vagas adoro assistir um filme ou uma série.
+                        Nas horas vagas adoro ver um filme ou uma série.
                     </TextoSobreMin>
                 </DivTextoSobreMin>
                 <DivEu>

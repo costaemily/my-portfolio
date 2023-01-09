@@ -3,7 +3,7 @@ import Logo from '../../imgs/instagram.png';
 import Fonte from '../../fonts/Inder-Regular.ttf'
 
 export const CirculosContainer = styled.div`
-    width: 40%;
+    width: auto;
     height: 100%;
 
     @media (max-width: 576px) {
@@ -72,10 +72,9 @@ export const Prin = styled.div`
 
 `;
 export const TextoContainer = styled.div`
-    width: 37%;
-    height: 200px;
+    width: auto;
+    height: auto;
 
-    padding-left: 50px;
     margin-top: 30px;
 
     @media (max-width: 576px) {
@@ -113,9 +112,6 @@ export const LogoRedes = styled.a`
     background-size: cover;
 `;
 export const MySkills = styled.div`
-    margin-top: ${((props) => props.top)};
-    margin-right: ${((props) => props.right)};
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +264,7 @@ export const DivPrin = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     width: 100%;
     height: 100%;
@@ -279,11 +275,13 @@ export const DivPrin = styled.div`
 `;
 export const DivMySkills = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
-    width: 20%;
-    height: 100%;
+    width: auto;
+    height: auto;
+
+    gap: 30px;
 
     @media (max-width: 576px) {
         width: 100%;
@@ -400,6 +398,7 @@ export const DivFundoProjetos = styled.div`
 
     border-radius: 30px;
     background-color: #72FFCC;
+    box-shadow: rgb(0 0 0 / 25%) 6px 6px 80px 8px;
 `;
 export const DivProjetoDisc = styled.div`
     display: flex;
