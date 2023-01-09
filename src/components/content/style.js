@@ -21,6 +21,9 @@ export const CirculoPrin = styled.div`
     margin-left: -20px;
 
     background-color: #72FFCC;
+    background-image: url(${((props) => props.src)});
+    background-position: center;
+    background-size: cover;
 
     &:hover{
         transform: translateX(30px);

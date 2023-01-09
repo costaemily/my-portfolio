@@ -4,7 +4,8 @@ import Github from "../../imgs/github.png";
 import Instagram from "../../imgs/instagram.png";
 import Linkedin from "../../imgs/linkedin.png";
 import Emily from "../../imgs/emily.png";
-import Link from "../../imgs/simbolo-de-link-externo.png"
+import Link from "../../imgs/simbolo-de-link-externo.png";
+import Logo from "../../imgs/E.png";
 
 function Main() {
   return (
@@ -13,7 +14,7 @@ function Main() {
                 <DivPrin>
                     <CirculosContainer>
                         <CirculoSec/>
-                        <CirculoPrin/>
+                        <CirculoPrin src={Logo}/>
                     </CirculosContainer>
                     <TextoContainer>
                         <TextoPrin>Emily da Silva Costa</TextoPrin>
@@ -33,7 +34,7 @@ function Main() {
                     </DivMySkills>
                 </DivPrin>
             </Prin> 
-            <DivSobreMim id="Sobre Mim">
+            <DivSobreMim id="SobreMim">
                 <DivTextoSobreMin>
                     <TituloSobreMin>Olá! Eu sou a Emily</TituloSobreMin>
                     <TextoSobreMin>
