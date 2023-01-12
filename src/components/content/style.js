@@ -9,7 +9,7 @@ export const CirculosContainer = styled.div`
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: auto;
         height: auto;
     }
     @media (max-width: 320px) {
@@ -40,11 +40,13 @@ export const CirculoPrin = styled.div`
         transform: translateX(30px);
     }
     @media (max-width: 576px) {
-        width: 200px;
-        height: 200px;
+        width: 8rem;
+        height: 8rem;
 
-        margin-top: -250px;
-        margin-left: 10px;
+        margin: 0%;
+        &:hover{
+            transform: translateX(-30px);
+        }
     }
     @media (max-width: 320px) {
         width: 8rem;
@@ -68,11 +70,10 @@ export const CirculoSec = styled.div`
     background-color: #D9D9D9;
 
     @media (max-width: 576px) {
-        width: 30%;
-        height: 30%;
+        width: 13rem;
+        height: 13rem;
 
-        margin-top: 70px;
-        margin-left: 200px;
+        margin: 0%;
     }
     @media (max-width: 320px) {
         width: 11rem;
@@ -94,6 +95,7 @@ export const Prin = styled.div`
     @media (max-width: 576px) {
         width: 100%;
         height: auto;
+        flex-direction: column;
     }
     @media (max-width: 320px) {
         width: 100%;
@@ -117,8 +119,12 @@ export const TextoContainer = styled.div`
         justify-content: center;
         margin-top: 5%;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
         width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
     }
 `;
 export const TextoPrin = styled.div`
@@ -128,6 +134,9 @@ export const TextoPrin = styled.div`
     font-weight: 600;
     @media (max-width: 320px) {
         font-size: 1.7rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 2rem;
     }
 `;
 export const TextoSec = styled.div`
@@ -148,6 +157,12 @@ export const LogosContainer = styled.div`
     
     gap: 20px;
     @media (max-width: 320px) {
+        margin-top: 5%;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+    }
+    @media (max-width: 575px) {
         margin-top: 5%;
         width: 100%;
         height: auto;
@@ -234,7 +249,8 @@ export const DivPrin = styled.div`
     height: auto;
 
     @media (max-width: 576px) {
-        flex-direction: column;
+        flex-direction: row;
+        margin-top: 60px;
     }
     @media (max-width: 320px) {
         flex-direction: row;
@@ -256,13 +272,13 @@ export const DivMySkills = styled.div`
 
     @media (max-width: 320px) {
         height: auto;
-        margin-top: 5%;
+        margin-top: 10%;
     }
     @media (max-width: 576px) {
-        width: 100%;
-        height: 20%;
+        height: auto;
         flex-direction: row;
         justify-content: space-around;
+        margin-top: 10%;
     }
 `;
 export const DivExperiencia = styled.div`
@@ -291,6 +307,9 @@ export const DivFundoExperiencia = styled.div`
 
     @media (max-width: 320px) {
         width: 100%;
+    }
+    @media (max-width: 576px) {
+        width: 95%;
     }
 `;
 export const DivExperienciaDesc = styled.div`
@@ -377,6 +396,9 @@ export const DivFundoProjetos = styled.div`
     @media (max-width: 320px) {
         width: auto;
     }
+    @media (max-width: 576px) {
+        width: auto;
+    }
 `;
 export const DivProjetoDisc = styled.div`
     display: flex;
@@ -444,6 +466,12 @@ export const BoxProjetos = styled.a`
     text-decoration: none;
 
     @media (max-width: 320px) {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        margin-top: 7px;
+    }
+    @media (max-width: 576px) {
         flex-direction: column;
         width: 95%;
         height: auto;
@@ -520,6 +548,9 @@ export const Tags = styled.div`
         width: 40%;
         height: 2rem;
     }
+    @media (max-width: 576px) {
+        margin-top: 5%;
+    }
 `;
 export const DivSobreMim = styled.div`
     display: flex;
@@ -538,6 +569,11 @@ export const DivSobreMim = styled.div`
         margin-top: 5%;
         height: auto;
     }
+    @media (max-width: 576px) {
+        flex-direction: column-reverse;
+        margin-top: 0%;
+        height: auto;
+    }
 `;
 export const DivTextoSobreMin = styled.div`
     display: flex;
@@ -551,6 +587,10 @@ export const DivTextoSobreMin = styled.div`
         width: 80%;
         height: auto;
     }
+    @media (max-width: 576px) {
+        width: 90%;
+        height: auto;
+    }
 `;
 export const DivEu = styled.div`
     display: flex;
@@ -561,6 +601,10 @@ export const DivEu = styled.div`
     @media (max-width: 320px) {
         width: 100%;
         height: 300px;
+    }
+    @media (max-width: 576px) {
+        width: 100%;
+        height: 400px;
     }
 `;
 export const DivImagem = styled.div`

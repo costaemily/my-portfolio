@@ -68,9 +68,9 @@ export const Items = styled.a`
         }
     }
     @media (max-width: 576px) {
-        font-size: 70%;
+        font-size: 80%;
         &:hover{
-            font-size: 80%;
+            font-size: 90%;
         }
     }
     @media (max-width: 786px) {
