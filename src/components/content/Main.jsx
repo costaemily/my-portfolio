@@ -17,25 +17,25 @@ function Main() {
                         <CirculoSec/>
                         <CirculoPrin src={Logo}/>
                     </CirculosContainer>
-                    <TextoContainer>
-                        <TextoPrin>Emily da Silva Costa</TextoPrin>
-                        <TextoSec>Desenvolvedora de Software</TextoSec>
-                        <LogosContainer>
-                            <LogoRedes src={Github} href={'https://github.com/costaemily'}/>
-                            <LogoRedes src={Linkedin} href={'https://www.linkedin.com/in/costa-emily/'}/>
-                            <LogoRedes src={Instagram} href={'https://www.instagram.com/costa.emilys/'}/>
-                            <LogoRedes src={Email} href={"mailto:costa.emily@outlook.com"}/>
-                        </LogosContainer>
-                        <DivMySkills>
-                            <MySkills width={'70px'}>HTML</MySkills>
-                            <MySkills width={'70px'}>CSS</MySkills>
-                            <MySkills width={'120px'}>JavaScript</MySkills>
-                            <MySkills width={'70px'}>REACT</MySkills>
-                            <MySkills width={'90px'}>PYTHON</MySkills>
-                            <MySkills width={'70px'}>C#</MySkills>
-                        </DivMySkills>
-                    </TextoContainer>
                 </DivPrin>
+                <TextoContainer>
+                <TextoPrin>Emily da Silva Costa</TextoPrin>
+                    <TextoSec>Desenvolvedora de Software</TextoSec>
+                    <LogosContainer>
+                        <LogoRedes src={Github} href={'https://github.com/costaemily'}/>
+                        <LogoRedes src={Linkedin} href={'https://www.linkedin.com/in/costa-emily/'}/>
+                        <LogoRedes src={Instagram} href={'https://www.instagram.com/costa.emilys/'}/>
+                        <LogoRedes src={Email} href={"mailto:costa.emily@outlook.com"}/>
+                    </LogosContainer>
+                    <DivMySkills>
+                        <MySkills width={'70px'}>HTML</MySkills>
+                        <MySkills width={'70px'}>CSS</MySkills>
+                        <MySkills width={'120px'}>JavaScript</MySkills>
+                        <MySkills width={'70px'}>REACT</MySkills>
+                        <MySkills width={'90px'}>PYTHON</MySkills>
+                        <MySkills width={'70px'}>C#</MySkills>
+                    </DivMySkills>
+                </TextoContainer>
             </Prin> 
             <DivSobreMim id="SobreMim">
                 <DivTextoSobreMin>

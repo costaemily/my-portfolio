@@ -1,14 +1,25 @@
 import styled from "styled-components";
-import Logo from '../../imgs/instagram.png';
-import Fonte from '../../fonts/Inder-Regular.ttf'
 
 export const CirculosContainer = styled.div`
     width: auto;
-    height: 100%;
+    height: auto;
 
     @media (max-width: 576px) {
-        width: 100%;
-        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+    @media (max-width: 320px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0%;
+        width: 80%;
+        height: auto;
     }
 `;
 export const CirculoPrin = styled.div`
@@ -29,11 +40,22 @@ export const CirculoPrin = styled.div`
         transform: translateX(30px);
     }
     @media (max-width: 576px) {
-        width: 200px;
-        height: 200px;
+        width: 8rem;
+        height: 8rem;
 
-        margin-top: -250px;
-        margin-left: 10px;
+        margin: 0%;
+        &:hover{
+            transform: translateX(-30px);
+        }
+    }
+    @media (max-width: 320px) {
+        width: 8rem;
+        height: 6rem;
+
+        margin-top: 0%;
+        &:hover{
+            transform: translateX(-30px);
+        }
     }
 `;
 export const CirculoSec = styled.div`
@@ -48,38 +70,63 @@ export const CirculoSec = styled.div`
     background-color: #D9D9D9;
 
     @media (max-width: 576px) {
-        width: 300px;
-        height: 300px;
+        width: 13rem;
+        height: 13rem;
 
-        margin-top: 70px;
-        margin-left: 200px;
+        margin: 0%;
+    }
+    @media (max-width: 320px) {
+        width: 11rem;
+        height: 9rem;
+
+        margin: 0%;
     }
 `;
 export const Prin = styled.div`
     width: 100%;
-    height: 570px;
+    height: 100%;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     @media (max-width: 576px) {
         width: 100%;
-        height: 570px;
+        height: auto;
+        flex-direction: column;
     }
-
+    @media (max-width: 320px) {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
 `;
 export const TextoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
     width: auto;
     height: auto;
 
     margin-top: 30px;
 
+    @media (max-width: 320px) {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
     @media (max-width: 576px) {
         width: 100%;
-        margin-top: -360px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    @media (max-width: 1024px) {
+        margin-left: 50px;
     }
 `;
 export const TextoPrin = styled.div`
@@ -87,11 +134,20 @@ export const TextoPrin = styled.div`
     font-size: 40px;
 
     font-weight: 600;
+    @media (max-width: 320px) {
+        font-size: 1.7rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 2rem;
+    }
 `;
 export const TextoSec = styled.div`
     font-family: 'Inder', sans-serif;
     font-size: 20px;
     color: gray;
+    @media (max-width: 320px) {
+        font-size: 1rem;
+    }
 `;
 export const LogosContainer = styled.div`
     display: flex;
@@ -102,6 +158,18 @@ export const LogosContainer = styled.div`
     height: 100px;
     
     gap: 20px;
+    @media (max-width: 320px) {
+        margin-top: 5%;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+    }
+    @media (max-width: 575px) {
+        margin-top: 5%;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+    }
 `;
 export const LogoRedes = styled.a`
     width: 40px;
@@ -110,6 +178,10 @@ export const LogoRedes = styled.a`
     background-image: url(${((props) => props.src)});
     background-position: center;
     background-size: cover;
+    @media (max-width: 320px) {
+        width: 2rem;
+        height: 2rem;
+    }
 `;
 export const MySkills = styled.div`
     display: flex;
@@ -125,92 +197,15 @@ export const MySkills = styled.div`
     font-size: 20px;
     font-weight: 1000;
 
+    @media (max-width: 320px) {
+        width: auto + 1px;
+        height: auto + 0.1px;
+        font-size: 1rem;
+    }
     @media (max-width: 576px) {
         margin-top: 0px;
         margin-right: 0px;
     }
-`;
-export const ExperienciaContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 600px;
-`;
-export const FundoExp = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    
-    width: 70%;
-    height: 90%;
-
-    border-radius: 30px;
-
-    margin-top: 40px;
-
-    background-color: #D9D9D9;
-`;
-export const LinhaVertical = styled.div`
-    width: 5px;
-    height: 100%;
-
-    background-color: #72FFCC;
-`;
-export const TextoExperiencia = styled.div`
-    font-family: 'Inder';
-    color: #72FFCC;
-    font-weight: 900;
-    font-size: 40px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 0.1px;
-
-    margin-top: -430px;
-    margin-left: 70px;
-`;
-export const BoxExp = styled.div`
-    width: 400px;
-    height: 200px;
-
-    border-radius: 30px;
-
-    background-color: gray;
-`;
-export const DivExp = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 5%;
-    height: 100%;
-`;
-export const DivDesc = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-`;
-export const DivDescExp = styled.div`
-    position: relative;
-    right: 1.5%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    height: 40%;
-
-    margin-top: 10px;
-`;
-export const CirculoExp = styled.div`
-    width: 25px;
-    height: 25px;
-
-    border-radius: 50%;
-    background-color: #72FFCC;
-`;
-export const DivD = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: green;
 `;
 export const TextoTituloExp = styled.div`
     margin-left: 10px;
@@ -246,48 +241,46 @@ export const DivTextoExp = styled.div`
 
     font-size: 18px;
 `;
-export const DivMinhaExp = styled.div`
-    width: 100%;
-    height: 20%;
-
-    background-color: green;
-`;
-export const DivBarra = styled.div`
-    width: 5%;
-    height: 5px;
-
-    background-color: #72FFCC;
-
-    margin-top: 4%;
-`;
 export const DivPrin = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 
     @media (max-width: 576px) {
-        flex-direction: column;
+        flex-direction: row;
+        margin-top: 60px;
+    }
+    @media (max-width: 320px) {
+        flex-direction: row;
+        justify-content: center;
+
+        margin-top: 60px;
     }
 `;
 export const DivMySkills = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 
     width: auto;
     height: auto;
 
     gap: 30px;
 
+    @media (max-width: 320px) {
+        height: auto;
+        margin-top: 10%;
+    }
     @media (max-width: 576px) {
-        width: 100%;
-        height: 20%;
+        height: auto;
         flex-direction: row;
         justify-content: space-around;
+        margin-top: 10%;
     }
 `;
 export const DivExperiencia = styled.div`
@@ -313,14 +306,13 @@ export const DivFundoExperiencia = styled.div`
     box-shadow: rgb(0 0 0 / 25%) 6px 6px 80px 8px;
 
     border-radius: 30px;
-`;
-export const DivLinha = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 
-    width: 100%;
-    height: 100%;
+    @media (max-width: 320px) {
+        width: 100%;
+    }
+    @media (max-width: 576px) {
+        width: 95%;
+    }
 `;
 export const DivExperienciaDesc = styled.div`
     display: flex;
@@ -388,17 +380,30 @@ export const DivProjetos = styled.div`
     height: 600px;
 
     margin-top: 100px;
+    @media (max-width: 320px) {
+        height: auto;
+    }
+    @media (max-width: 576px) {
+        height: auto;
+    }
 `;
 export const DivFundoProjetos = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     width: 95%;
-    height: 100%;
+    height: 99%;
 
     border-radius: 30px;
     background-color: #72FFCC;
     box-shadow: rgb(0 0 0 / 25%) 6px 6px 80px 8px;
+
+    @media (max-width: 320px) {
+        width: auto;
+    }
+    @media (max-width: 576px) {
+        width: auto;
+    }
 `;
 export const DivProjetoDisc = styled.div`
     display: flex;
@@ -410,6 +415,10 @@ export const DivProjetoDisc = styled.div`
 
     border-radius: 40px;
     background-color: white;
+
+    @media (max-width: 320px) {
+        height: auto;
+    }
 `;
 export const TextoProjetos = styled.div`
     font-family: 'Inder';
@@ -417,12 +426,16 @@ export const TextoProjetos = styled.div`
     font-weight: 1000;
     font-size: 40px;
 
-    margin-top: 50px;
-    margin-bottom: -40px;
+    margin-top: 3%;
+    @media (max-width: 320px) {
+        margin-top: 5%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
 `;
 export const DivProjetosDescricao = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -430,6 +443,13 @@ export const DivProjetosDescricao = styled.div`
     height: 100%;
 
     gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media (max-width: 320px) {
+        height: auto;
+        gap: 0px;
+    }
 `;
 export const BoxProjetos = styled.a`
     display: flex;
@@ -439,7 +459,7 @@ export const BoxProjetos = styled.a`
     box-sizing: border-box;
 
     width: 45%;
-    height: 37%;
+    height: 40%;
 
     border-radius: 6px;
     background-color: white;
@@ -449,6 +469,19 @@ export const BoxProjetos = styled.a`
     padding: 16px;
 
     text-decoration: none;
+
+    @media (max-width: 320px) {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        margin-top: 7px;
+    }
+    @media (max-width: 576px) {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        margin-top: 7px;
+    }
 `;
 export const HeaderProjetos = styled.div`
     display: flex;
@@ -461,6 +494,10 @@ export const HeaderProjetos = styled.div`
     font-family: 'Inder';
     font-size: 22px;
     color: black;
+
+    @media (max-width: 320px) {
+        font-size: 1rem;
+    }
 `;
 export const IMGLink = styled.div`
     width: 30px;
@@ -468,6 +505,10 @@ export const IMGLink = styled.div`
     background-image: url(${((props) => props.src)});
     background-position: center;
     background-size: cover;
+    @media (max-width: 320px) {
+        width: 1rem;
+        height: 1rem;
+    }
 `;
 export const TextoLink = styled.div`
     height: auto;
@@ -475,6 +516,10 @@ export const TextoLink = styled.div`
     font-family: 'Inder';
     font-size: 20px;
     color: gray;
+
+    @media (max-width: 320px) {
+        font-size: 0.8rem;
+    }
 `;
 export const DivTags = styled.div`
     display: flex;
@@ -485,6 +530,10 @@ export const DivTags = styled.div`
     width: 100%;
 
     gap: 30px;
+    @media (max-width: 320px) {
+        margin-top: 5%;
+        gap: 4%;
+    }
 `;
 export const Tags = styled.div`
     display: flex;
@@ -498,6 +547,15 @@ export const Tags = styled.div`
 
     background-color: #72FFCC;
     border-radius: 10px;
+
+    @media (max-width: 320px) {
+        font-size: 0.7rem;
+        width: 40%;
+        height: 2rem;
+    }
+    @media (max-width: 576px) {
+        margin-top: 5%;
+    }
 `;
 export const DivSobreMim = styled.div`
     display: flex;
@@ -510,6 +568,17 @@ export const DivSobreMim = styled.div`
     margin-top: 50px;
 
     gap: 30px;
+
+    @media (max-width: 320px) {
+        flex-direction: column-reverse;
+        margin-top: 5%;
+        height: auto;
+    }
+    @media (max-width: 576px) {
+        flex-direction: column-reverse;
+        margin-top: 0%;
+        height: auto;
+    }
 `;
 export const DivTextoSobreMin = styled.div`
     display: flex;
@@ -518,12 +587,30 @@ export const DivTextoSobreMin = styled.div`
     justify-content: center;
     width: 50%;
     height: 100%;
+
+    @media (max-width: 320px) {
+        width: 80%;
+        height: auto;
+    }
+    @media (max-width: 576px) {
+        width: 90%;
+        height: auto;
+    }
 `;
 export const DivEu = styled.div`
     display: flex;
     align-items: center;
     width: 40%;
     height: 100%;
+
+    @media (max-width: 320px) {
+        width: 100%;
+        height: 300px;
+    }
+    @media (max-width: 576px) {
+        width: 100%;
+        height: 400px;
+    }
 `;
 export const DivImagem = styled.div`
     width: 100%;
@@ -532,12 +619,22 @@ export const DivImagem = styled.div`
     background-image: url(${((props) => props.src)});
     background-position: center;
     background-size: cover;
+    @media (max-width: 320px) {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
 `;
 export const TituloSobreMin = styled.div`
     font-family: 'Inder';
     color: #72FFCC;
     font-weight: 1000;
     font-size: 40px;
+    @media (max-width: 320px) {
+        font-size: 2rem;
+        text-align: center;
+    }
 `;
 export const TextoSobreMin = styled.div`
     width: 100%;

@@ -24,6 +24,12 @@ export const ImagemLogo = styled.div`
 
     background-position: center;
     background-size: cover;
+    @media (max-width: 320px) {
+        width: 50%;
+    }
+    @media (max-width: 768px) {
+        width: 70%;
+    }
 `;
 export const DivLogo = styled.div`
     width: 20%;
@@ -40,7 +46,7 @@ export const DivNav = styled.div`
     gap: 35px;
 
     @media (max-width: 576px) {
-        gap: 20px;
+        gap: 7%;
         font-size: small;
     }
 `;
@@ -55,9 +61,22 @@ export const Items = styled.a`
         font-size: 20px;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 320px) {
+        font-size: 40%;
         &:hover{
-            font-size: 15px;
+            font-size: 43%;
+        }
+    }
+    @media (max-width: 576px) {
+        font-size: 80%;
+        &:hover{
+            font-size: 90%;
+        }
+    }
+    @media (max-width: 786px) {
+        font-size: 80%;
+        &:hover{
+            font-size: 90%;
         }
     }
 `;
