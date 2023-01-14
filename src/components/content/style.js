@@ -102,7 +102,6 @@ export const Prin = styled.div`
         height: auto;
         flex-direction: column;
     }
-
 `;
 export const TextoContainer = styled.div`
     display: flex;
@@ -125,6 +124,9 @@ export const TextoContainer = styled.div`
         align-items: center;
         justify-content: center;
         margin-top: 5%;
+    }
+    @media (max-width: 1024px) {
+        margin-left: 50px;
     }
 `;
 export const TextoPrin = styled.div`
@@ -375,10 +377,13 @@ export const DivProjetos = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: 600px;
 
     margin-top: 100px;
     @media (max-width: 320px) {
+        height: auto;
+    }
+    @media (max-width: 576px) {
         height: auto;
     }
 `;
@@ -406,7 +411,7 @@ export const DivProjetoDisc = styled.div`
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: auto;
+    height: 99%;
 
     border-radius: 40px;
     background-color: white;
@@ -454,7 +459,7 @@ export const BoxProjetos = styled.a`
     box-sizing: border-box;
 
     width: 45%;
-    height: 37%;
+    height: 40%;
 
     border-radius: 6px;
     background-color: white;
