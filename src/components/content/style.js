@@ -193,7 +193,7 @@ export const MySkills = styled.div`
   border-radius: 10px;
   background-color: #72ffcc;
 
-  font-family: "Inder";
+  font-family: "Inder", sans-serif;
   font-size: 20px;
   font-weight: 1000;
 
@@ -491,7 +491,7 @@ export const HeaderProjetos = styled.div`
   width: 100%;
   height: auto;
 
-  font-family: "Inder";
+  font-family: "Inder", sans-serif;
   font-size: 22px;
   color: black;
 
@@ -540,6 +540,7 @@ export const Tags = styled.div`
   align-items: center;
   justify-content: center;
 
+  font-family: "Inder", sans-serif;
   color: black;
   font-weight: 600;
   width: 60px;
@@ -627,7 +628,7 @@ export const DivImagem = styled.div`
   }
 `;
 export const TituloSobreMin = styled.div`
-  font-family: "Inder";
+  font-family: "Inder", sans-serif;
   color: #72ffcc;
   font-weight: 1000;
   font-size: 40px;
