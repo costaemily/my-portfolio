@@ -110,7 +110,6 @@ export const TextoContainer = styled.div`
   height: auto;
 
   margin-top: 30px;
-
   @media (max-width: 320px) {
     width: 100%;
     height: auto;
@@ -125,7 +124,7 @@ export const TextoContainer = styled.div`
     justify-content: center;
     margin-top: 5%;
   }
-  @media (max-width: 1024px) {
+  @media (min-width: 577px) and (max-width: 1024px) {
     margin-left: 50px;
   }
 `;
@@ -135,7 +134,7 @@ export const TextoPrin = styled.div`
 
   font-weight: 600;
   @media (max-width: 320px) {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   @media (max-width: 576px) {
     font-size: 2rem;
@@ -419,6 +418,10 @@ export const DivProjetoDisc = styled.div`
   @media (max-width: 320px) {
     height: auto;
   }
+  @media (max-width: 576px) and (min-width: 321px) {
+    width: 90%;
+    height: 80%;
+  }
 `;
 export const TextoProjetos = styled.div`
   font-family: "Inder", sans-serif;
@@ -429,6 +432,11 @@ export const TextoProjetos = styled.div`
   margin-top: 3%;
   @media (max-width: 320px) {
     margin-top: 5%;
+    margin-bottom: 0%;
+    text-align: center;
+  }
+  @media (max-width: 576px) {
+    margin-top: 10%;
     margin-bottom: 0%;
     text-align: center;
   }
@@ -506,8 +514,12 @@ export const IMGLink = styled.div`
   background-position: center;
   background-size: cover;
   @media (max-width: 320px) {
-    width: 1rem;
-    height: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  @media (max-width: 576px) and (min-width: 321px) {
+    width: 2rem;
+    height: 2rem;
   }
 `;
 export const TextoLink = styled.div`
@@ -608,7 +620,7 @@ export const DivEu = styled.div`
     width: 100%;
     height: 300px;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 576px) and (min-width: 321px) {
     width: 100%;
     height: 400px;
   }
@@ -634,6 +646,9 @@ export const TituloSobreMin = styled.div`
   font-size: 40px;
   @media (max-width: 320px) {
     font-size: 2rem;
+    text-align: center;
+  }
+  @media (max-width: 576px) {
     text-align: center;
   }
 `;
