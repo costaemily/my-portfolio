@@ -51,7 +51,7 @@ export const DivNav = styled.div`
   }
 `;
 export const Items = styled.a`
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   font-weight: 500;
   text-decoration: none;
   color: black;

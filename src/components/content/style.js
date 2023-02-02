@@ -129,7 +129,7 @@ export const TextoContainer = styled.div`
   }
 `;
 export const TextoPrin = styled.div`
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   font-size: 40px;
 
   font-weight: 600;
@@ -141,7 +141,7 @@ export const TextoPrin = styled.div`
   }
 `;
 export const TextoSec = styled.div`
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   font-size: 20px;
   color: gray;
   @media (max-width: 320px) {
@@ -192,7 +192,7 @@ export const MySkills = styled.div`
   border-radius: 10px;
   background-color: #72ffcc;
 
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   font-size: 20px;
   font-weight: 1000;
 
@@ -208,20 +208,20 @@ export const MySkills = styled.div`
 `;
 export const TextoTituloExp = styled.div`
   margin-left: 10px;
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   font-weight: 600;
   font-size: 20px;
 `;
 export const TextoSubTituloExp = styled.div`
   margin-left: 10px;
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   font-weight: 400;
 
   color: gray;
   margin-top: 5px;
 `;
 export const TextoExp = styled.div`
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   text-align: justify;
 `;
 export const DivTextoExp = styled.div`
@@ -363,7 +363,7 @@ export const DivTituloExp = styled.div`
   }
 `;
 export const Texto = styled.div`
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   color: #72ffcc;
   font-weight: 900;
   font-size: 40px;
@@ -424,7 +424,7 @@ export const DivProjetoDisc = styled.div`
   }
 `;
 export const TextoProjetos = styled.div`
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   color: #72ffcc;
   font-weight: 1000;
   font-size: 40px;
@@ -499,7 +499,7 @@ export const HeaderProjetos = styled.div`
   width: 100%;
   height: auto;
 
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   font-size: 22px;
   color: black;
 
@@ -525,7 +525,7 @@ export const IMGLink = styled.div`
 export const TextoLink = styled.div`
   height: auto;
   margin-top: 5px;
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   font-size: 20px;
   color: gray;
 
@@ -552,7 +552,7 @@ export const Tags = styled.div`
   align-items: center;
   justify-content: center;
 
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   color: black;
   font-weight: 600;
   width: 60px;
@@ -640,7 +640,7 @@ export const DivImagem = styled.div`
   }
 `;
 export const TituloSobreMin = styled.div`
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   color: #72ffcc;
   font-weight: 1000;
   font-size: 40px;
@@ -656,7 +656,7 @@ export const TextoSobreMin = styled.div`
   width: 100%;
   height: auto;
 
-  font-family: "Inder", sans-serif;
+  font-family: 'Inder', sans-serif;
   font-size: 20px;
   text-align: justify;
 
