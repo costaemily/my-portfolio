@@ -1,25 +1,16 @@
 import React from "react";
 import {
-  BoxExp,
   BoxProjetos,
-  CirculoExp,
   CirculoPrin,
   CirculosContainer,
   CirculoSec,
   DescricaoExp,
-  DivBarra,
-  DivD,
-  DivDesc,
-  DivDescExp,
   DivEu,
-  DivExp,
   DivExperiencia,
   DivExperienciaDesc,
   DivFundoExperiencia,
   DivFundoProjetos,
   DivImagem,
-  DivLinha,
-  DivMinhaExp,
   DivMySkills,
   DivPrin,
   DivProjetoDisc,
@@ -30,12 +21,9 @@ import {
   DivTextoExp,
   DivTextoSobreMin,
   DivTituloExp,
-  ExperienciaContainer,
   ExperienciaDesc,
-  FundoExp,
   HeaderProjetos,
   IMGLink,
-  LinhaVertical,
   LogoRedes,
   LogosContainer,
   MySkills,
@@ -44,7 +32,6 @@ import {
   Texto,
   TextoContainer,
   TextoExp,
-  TextoExperiencia,
   TextoLink,
   TextoPrin,
   TextoProjetos,
@@ -76,14 +63,20 @@ function Main() {
           <TextoPrin>Emily da Silva Costa</TextoPrin>
           <TextoSec>Desenvolvedora de Software</TextoSec>
           <LogosContainer>
-            <LogoRedes src={Github} href={"https://github.com/costaemily"} />
+            <LogoRedes
+              src={Github}
+              href={"https://github.com/costaemily"}
+              target="_blank"
+            />
             <LogoRedes
               src={Linkedin}
               href={"https://www.linkedin.com/in/costa-emily/"}
+              target="_blank"
             />
             <LogoRedes
               src={Instagram}
               href={"https://www.instagram.com/costa.emilys/"}
+              target="_blank"
             />
             <LogoRedes src={Email} href={"mailto:costa.emily@outlook.com"} />
           </LogosContainer>
@@ -174,7 +167,10 @@ function Main() {
           <DivProjetoDisc>
             <TextoProjetos>Meus Projetos</TextoProjetos>
             <DivProjetosDescricao>
-              <BoxProjetos href="https://github.com/costaemily/SPIS-Project">
+              <BoxProjetos
+                href="https://github.com/costaemily/SPIS-Project"
+                target="_blank"
+              >
                 <HeaderProjetos>
                   SPIS - Inventory
                   <IMGLink src={Link} />
@@ -188,7 +184,10 @@ function Main() {
                   <Tags>NATIVE</Tags>
                 </DivTags>
               </BoxProjetos>
-              <BoxProjetos href="https://github.com/costaemily/todo-list">
+              <BoxProjetos
+                href="https://github.com/costaemily/todo-list"
+                target="_blank"
+              >
                 <HeaderProjetos>
                   todo-list
                   <IMGLink src={Link} />
@@ -203,7 +202,10 @@ function Main() {
                   <Tags>JS</Tags>
                 </DivTags>
               </BoxProjetos>
-              <BoxProjetos href="https://github.com/costaemily/simulador-paginacao">
+              <BoxProjetos
+                href="https://github.com/costaemily/simulador-paginacao"
+                target="_blank"
+              >
                 <HeaderProjetos>
                   simulador-paginacao
                   <IMGLink src={Link} />
@@ -216,7 +218,10 @@ function Main() {
                   <Tags>C#</Tags>
                 </DivTags>
               </BoxProjetos>
-              <BoxProjetos href="https://github.com/costaemily/simulador-sistemas-de-arquivos">
+              <BoxProjetos
+                href="https://github.com/costaemily/simulador-sistemas-de-arquivos"
+                target="_blank"
+              >
                 <HeaderProjetos>
                   simulador-sistemas-de-arquivo
                   <IMGLink src={Link} />
